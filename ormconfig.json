@@ -5,6 +5,7 @@
   "type": "postgres",
   "name": "default",
   "host": "localhost",
+  "synchronize": true,
   "port": 5432,
   "database": "queries_challenge",
   "entities": ["./src/modules/**/entities/*.ts"],

@@ -13,24 +13,24 @@ import { Game } from '../../games/entities/Game';
 @Entity('users')
 export class User {
   @PrimaryGeneratedColumn('uuid')
-  id: string;
+  id!: string;
 
   @Column()
-  first_name: string;
+  first_name!: string;
 
   @Column()
-  last_name: string;
+  last_name!: string;
 
   @Column()
-  email: string;
+  email!: string;
 
   @ManyToMany(() => Game, (game) => game.users)
   @JoinTable()
-  games: Game[];
+  games!: Game[];
 
   @CreateDateColumn()
-  created_at: Date;
+  created_at!: Date;
 
   @UpdateDateColumn()
-  updated_at: Date;
+  updated_at!: Date;
 }

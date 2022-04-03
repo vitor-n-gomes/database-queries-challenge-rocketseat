@@ -4,7 +4,7 @@ import { container } from "tsyringe";
 
 class FindUserWithGamesByIdController {
   async handle(request: Request, response: Response): Promise<Response> {
-    const { name, email, password, driver_license } = request.body;
+  
     /*
     const createUserUseCase = container.resolve(CreateUserUseCase);
 
